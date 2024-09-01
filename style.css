@@ -1,0 +1,38 @@
+.king{
+    color: #2196F3;
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+}
+{
+    background: #2F303A;
+}
+footer{
+    background: #2F303A;
+}
+.king1{
+    color: #2196F3;
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px
+}
+.king2 {
+    border-radius: 4px;
+background: #2196F3;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.king3{
+    background: #2F303A;
+}
+.king4{
+    color: #2196F3;
+}
+.king5{
+    color: #2196F3;
+}
