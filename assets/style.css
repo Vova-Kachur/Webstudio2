@@ -13,8 +13,7 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-
-.a{
+.link{
     color: #2196F3;
 
 font-family: Raleway;
@@ -36,64 +35,92 @@ letter-spacing: 0.78px;
 }
 .ul-title{
     color: #2196F3;
-
-font-family: Roboto;
 font-size: 14px;
-font-style: normal;
 font-weight: 500;
 line-height: normal;
-letter-spacing: 0.28px;
+letter-spacing: 0.28px
 }
-.ul{
+.title2{
     color: #2196F3;
-
-font-family: Roboto;
 font-size: 14px;
-font-style: normal;
 font-weight: 500;
 line-height: normal;
 letter-spacing: 0.28px;
 }
-.h2{
+.section-title{
+    color: #FFF;
+text-align: center;
+font-size: 44px;
+font-weight: 900;
+line-height: 60px; /* 136.364% */
+letter-spacing: 2.64px;
+text-transform: uppercase;
+}
+.section-button{
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 0.96px;
+}
+.list-item{
     color: #212121;
-
-font-family: Roboto;
 font-size: 14px;
-font-style: normal;
 font-weight: 700;
 line-height: normal;
 letter-spacing: 0.42px;
 text-transform: uppercase;
 }
-.p{
+.list-text{
     color: #757575;
-
-font-family: Roboto;
 font-size: 14px;
-font-style: normal;
 font-weight: 400;
 line-height: 24px; /* 171.429% */
 letter-spacing: 0.42px;
 }
-.h3{
+.section-item{
     color: #212121;
-
-text-align: center;
-font-family: Roboto;
+font-size: 36px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.08px;
+}
+.section-title{
+    color: #212121;
 font-size: 16px;
-font-style: normal;
 font-weight: 500;
 line-height: normal;
 letter-spacing: 0.48px;
 }
-.p{
+.section-text{
     color: #757575;
-
-text-align: center;
-font-family: Roboto;
 font-size: 16px;
-font-style: normal;
 font-weight: 400;
 line-height: normal;
 letter-spacing: 0.48px;
+}
+.footer-link{
+    color: #2196F3;
+font-family: Raleway;
+font-size: 26px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.78px;
+}
+.section-title1{
+    color: #212121;
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 26px; /* 162.5% */
+letter-spacing: 0.48px;
+}
+.ul-title1{
+    color: #2196F3;
+font-size: 14px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.28px;
 }
