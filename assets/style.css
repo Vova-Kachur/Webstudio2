@@ -52,6 +52,7 @@ font-weight: 900;
 line-height: 1.36; /* 136.364% */
 letter-spacing: 2.64px;
 text-transform: uppercase;
+background: #2F303A;
 }
 .tagline-button{
     color: var(--tem-background);
@@ -60,6 +61,7 @@ text-transform: uppercase;
     font-weight: 700;
     line-height: 1.87; /* 187.5% */
     letter-spacing: 0.96px;
+    background: #2196F3
 }
 .headline1-btn {
     color: var(--main-color);
