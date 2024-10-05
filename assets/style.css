@@ -22,6 +22,13 @@ font-weight: 700;
 line-height: 1.36;
 letter-spacing: 0.78px;
 }
+.caption-link{
+    color: var(--title-color);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71; /* 171.429% */
+letter-spacing: 0.42px;
+}
 .title-item{
     color: var(--logo-color);
 font-family: Raleway;
@@ -31,19 +38,27 @@ font-weight: 700;
 line-height: 1.36;
 letter-spacing: 0.78px;
 }
-.caption1-list{
-    color: var(--main-color);
+.caption1-list :hover{
+color: var(--akcent-color);
+}
+    .caption1-list{
+color: var(--main-color);
 font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.28px
-}
+    }
+
+
 .headline-list{
-    color: var(--akcent-color);
+    color: var(--et-color);
 font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.28px;
+}
+.tagline{
+    background: var(--footer-backgroung);
 }
 .tagline-title{
     color: var(--title-color);
@@ -52,7 +67,7 @@ font-weight: 900;
 line-height: 1.36; /* 136.364% */
 letter-spacing: 2.64px;
 text-transform: uppercase;
-background: #2F303A;
+
 }
 .tagline-button{
     color: var(--tem-background);
@@ -62,6 +77,9 @@ background: #2F303A;
     line-height: 1.87; /* 187.5% */
     letter-spacing: 0.96px;
     background: #2196F3
+}
+.headline1-btn :hover{
+background: var(--akcent-color);
 }
 .headline1-btn {
     color: var(--main-color);
@@ -80,7 +98,7 @@ letter-spacing: 0.42px;
 }
 .subtitle-item{
     color: var(--main-color);
- font-size : 36px;
+ font-size : 14px;
 font-weight: 700;
 line-height: 1.18;
 letter-spacing: 1.08px;
@@ -98,15 +116,24 @@ letter-spacing: 0.78px;
 
 .footer-item{
     color: var(--logo-color);
-font-size: 16px;
-font-weight: 500;
-line-height: 1.62; /* 162.5% */
-letter-spacing: 0.48px;
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.36;
+    letter-spacing: 0.78px;
 }
 .heading-list{
-    color: var(--akcent-color);
+   color: var(--et-color);
 font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.28px;
 }
+.footer{
+    background: var(--footer-backgroung);
+}
+.headline-list :hover{
+color: var(--akcent-color);
+}
+
