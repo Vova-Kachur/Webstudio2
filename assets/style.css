@@ -115,7 +115,7 @@ letter-spacing: 0.78px;
 }
 
 .footer-item{
-    color: var(--logo-color);
+    color: var(--title-color);
     font-family: Raleway;
     font-size: 26px;
     font-style: normal;
