@@ -1,4 +1,4 @@
-.hero {
+.hero1 {
     background: #FFF;
     text-align: center;
     padding-top: 94px;
@@ -38,7 +38,10 @@
      line-height: 2; 
      letter-spacing: 1.08px;
   }
-  
+  .main-img{
+    width: 370px;
+   height: 294px;
+  }  
   .main-desc {
      color: #757575;
      font-size: 16px;
@@ -54,13 +57,11 @@
     margin-top: 50px;
     gap: 30px;
   }
-  .main-box {
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  .main-item {   
     border: 1px solid #EEE;
     background: #FFF;
+    width: 370px;
+    height: 404px;
   }
  
   .button-box {
