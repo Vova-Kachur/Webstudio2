@@ -33,8 +33,11 @@
      letter-spacing: 0.48px;
      border-radius: 4px;
      background: #2196F3;
+     box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+
      
   }
+
  
   .main-text {
      color: #212121;
@@ -63,6 +66,10 @@
     flex-wrap: wrap;
     margin-top: 50px;
     gap: 30px;
+  }
+  .main-item:hover{
+    border: 1px solid #EEE;
+ box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
   }
   .main-item {   
     border: 1px solid #EEE;
