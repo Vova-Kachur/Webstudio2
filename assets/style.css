@@ -20,6 +20,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto ;
+  outline: 1px solid red;
 }
 
 .header {
@@ -31,9 +32,10 @@ body {
   display: flex;
   align-items: center;
 }
+
 .header-list {
   display: flex;
-  gap: 50px;
+  gap: 30px;
   margin-left: auto;
 }
 
@@ -46,6 +48,7 @@ body {
   letter-spacing: 0.78px;
   margin-right: 93px;
 }
+
 .header-span {
   color: var(--logo-color);
   font-family: Raleway;
@@ -63,7 +66,16 @@ body {
   letter-spacing: 0.28px;
 }
 
-.nav-studio:hover {
+.active-page {
+  color: var(--akcent-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.142857143;
+  letter-spacing: 0.28px;
+}
+
+.nav-studio:hover,
+.nav-studio:focus {
   color: var(--akcent-color);
   font-size: 14px;
   font-weight: 500;
@@ -72,11 +84,11 @@ body {
 }
 
 .nav-portfolio {
-color: var(--text-color);
-font-size: 14px;
-font-weight: 500;
-line-height: 1.142857143;
-letter-spacing: 0.28px;
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.142857143;
+  letter-spacing: 0.28px;
 }
 
 .nav-list {
@@ -84,7 +96,8 @@ letter-spacing: 0.28px;
   gap: 50px;
 }
 
-.nav-portfolio:hover {
+.nav-portfolio:hover,
+.nav-portfolio:focus {
   color: var(--akcent-color);
   font-size: 14px;
   font-weight: 500;
@@ -93,49 +106,60 @@ letter-spacing: 0.28px;
 }
 
 .nav-contacts {
-color: var(--text-color);
-font-size: 14px;
-font-weight: 500;
-line-height: 1.142857143;
-letter-spacing: 0.28px;
-}
-
-.header-gmail {
-color: var(--additional-color);
-font-size: 14px;
-font-weight: 500;
-line-height: 1.142857143;
-letter-spacing: 0.28px;
-}
-
-.header-gmail:hover {
-  color: var(--akcent-color);
+  color: var(--text-color);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.142857143;
   letter-spacing: 0.28px;
-  }
+}
 
-.header-phone {
+.header-link {
   color: var(--additional-color);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.142857143;
   letter-spacing: 0.28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.header-phone:hover {
+.header-icon {
+  width: 16px;
+  height: 12px;
+  fill: var(--additional-color);
+  margin-right: 10px;
+}
+
+.header-item:last-child {
+  .header-icon {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+.header-link:hover,
+.header-link:focus {
   color: var(--akcent-color);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.142857143;
   letter-spacing: 0.28px;
+  .header-icon {
+    fill: var(--akcent-color);
+  }
 }
 
 .hero {
+  background: var(--footer-color);
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../img/hero_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
 }
 .hero-title {
   color: var(--main-color);
@@ -164,9 +188,6 @@ letter-spacing: 0.28px;
   padding: 10px 32px;
   border: none;
 }
-.hero-button:hover{
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
 
 .section-main {
   padding-top: 94px;
@@ -190,6 +211,36 @@ letter-spacing: 0.28px;
   letter-spacing: 0.42px;
   width: 270px;
   margin-top: 10px;
+}
+
+.section-item::before {
+  content: " ";
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-color: var(--section-background);
+  margin-bottom: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-image: none;
+  
+}
+
+.section-item:first-child::before {
+  background-image: url(../img/antenna.png);
+}
+
+.section-item:nth-child(2)::before {
+  background-image: url(../img/clock.png);
+}
+
+.section-item:nth-child(3)::before {
+  background-image: url(../img/diagram.png);
+}
+
+.section-item:nth-child(4)::before {
+  background-image: url(../img/astronaut.png);
 }
 
 .section-list {
@@ -219,7 +270,6 @@ letter-spacing: 0.28px;
   padding-bottom: 94px;
   padding-top: 94px;
 }
-
 
 .ourteam-title {
   color: var(--text-color);
@@ -262,57 +312,21 @@ letter-spacing: 0.28px;
 .ourteam-img {
   width: 270px;
 }
+
 .ourteam-item {
   background-color: var(--main-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
-
-}
-.section-item::before {
-  content: " ";
-  display: block;
-  width: 270px;
-  height: 120px;
-  background-color: var(--section-background);
-  margin-bottom: 30px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-image: none;
-  
-}
-.hero{
-  /* background-image: url(../img/hero.webp); */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("../img/hero.webp")
-}
-
-.section-item:first-child::before {
-  background-image: url(../img/antenna.png);
-}
-
-.section-item:nth-child(2)::before {
-  background-image: url(../img/clock.png);
-}
-
-.section-item:nth-child(3)::before {
-  background-image: url(../img/diagram.png);
-}
-
-.section-item:nth-child(4)::before {
-  background-image: url(../img/astronaut.png);
-}
-
-
-.ourteam-item {
-  background-color: var(--main-color);
 }
 .footer {
   background: var(--footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footerbox {
+  display: flex;
+  gap: 70px;
 }
 
 .footer-adress {
@@ -374,4 +388,44 @@ letter-spacing: 0.28px;
 
 .footer-item:nth-child(2) {
   margin-bottom: 0px;
+}
+
+.footer-links {
+  margin-top: 12px;
+}
+
+.links-title {
+  color: var(--main-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.links-checklist {
+  display: flex;
+  gap: 10px;
+}
+
+.checklist-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.10);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  background: var(--akcent-color)
+}
+
+.checklist-image {
+  width: 20px;
+  height: 20px;
+  fill: var(--main-color);
 }
