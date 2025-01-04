@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,10 +22,10 @@
             <nav class="header-nav">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="./index.html" class="nav-studio">Студія</a>
+                        <a href="./index.html" class="nav-studio active-page">Студія</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./pages/portfolio.html" class="nav-portfolio">Портфоліо</a>
+                        <a href="./portfolio.html" class="nav-portfolio">Портфоліо</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-contacts">Контакти</a>
@@ -35,10 +34,18 @@
             </nav>
             <ul class="header-list">
                 <li class="header-item">
-                    <a href="mailto:info@devstudio.com" class="header-gmail">info@devstudio.com</a>
+                    <a href="mailto:info@devstudio.com" class="header-link">
+                        <svg class="header-icon">
+                            <use href="./img/symbol-defs.svg#icon-icon-envelope-hover"></use>
+                        </svg>info@devstudio.com
+                    </a>
                 </li>
                 <li class="header-item">
-                    <a href="tel:+380961111111" class="header-phone">+38 096 111 11 11</a>
+                    <a href="tel:+380961111111" class="header-link">
+                        <svg class="header-icon">
+                            <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11
+                    </a>
                 </li>
             </ul>
         </div>
@@ -96,10 +103,10 @@
                         <img src="./img/tablet.jpg" alt="tablet" class="whatwedo-img">
                     </li>
                     <li class="whatwedo-item">
-                        <img src="./img/comp.jpg" alt="leptop" class="whatwedo-img">
+                        <img src="./img/leptop.jpg" alt="leptop" class="whatwedo-img">
                     </li>
                     <li class="whatwedo-item">
-                        <img src="./img/tel.jpg" alt="ipad" class="whatwedo-img">
+                        <img src="./img/ipad.jpg" alt="ipad" class="whatwedo-img">
                     </li>
                 </ul>
             </div>
@@ -113,9 +120,7 @@
                         <div class="ourteam-box">
                             <h3 class="ourteam-text">Ігор Дем'яненко</h3>
                             <p class="ourteam-desc">Product Designer</p>
-                        </div>
-                        <div class="ourteam-linkbox">
-                            <ul class="linkbox-roster">
+                            <ul class="ourteam-roster">
                                 <li class="roster-item">
                                     <a href="#" class="roster-link">
                                         <svg class="roster-image">
@@ -152,9 +157,7 @@
                         <div class="ourteam-box">
                             <h3 class="ourteam-text">Ольга Рєпіна</h3>
                             <p class="ourteam-desc">Frontend Developer</p>
-                        </div>
-                        <div class="ourteam-linkbox">
-                            <ul class="linkbox-roster">
+                            <ul class="ourteam-roster">
                                 <li class="roster-item">
                                     <a href="#" class="roster-link">
                                         <svg class="roster-image">
@@ -191,9 +194,7 @@
                         <div class="ourteam-box">
                             <h3 class="ourteam-text">Микола Тарасов</h3>
                             <p class="ourteam-desc">Marketing</p>
-                        </div>
-                        <div class="ourteam-linkbox">
-                            <ul class="linkbox-roster">
+                            <ul class="ourteam-roster">
                                 <li class="roster-item">
                                     <a href="#" class="roster-link">
                                         <svg class="roster-image">
@@ -226,17 +227,15 @@
                         </div>
                     </li>
                     <li class="ourteam-item">
-                        <img src="./img/michailo.jpg" alt="michailo_UIDesigner" class="ourteam-img">
+                        <img src="./img/mihailo.jpg" alt="michailo_UIDesigner" class="ourteam-img">
                         <div class="ourteam-box">
                             <h3 class="ourteam-text">Михайло Єрмаков</h3>
                             <p class="ourteam-desc">UI Designer</p>
-                        </div>
-                        <div class="ourteam-linkbox">
-                            <ul class="linkbox-roster">
+                            <ul class="ourteam-roster">
                                 <li class="roster-item">
                                     <a href="#" class="roster-link">
                                         <svg class="roster-image">
-                                            <use href="./img/symbol-defs.svg#icon-icon-instagram"></use>
+                                            <use class="roster-svg" href="./img/symbol-defs.svg#icon-icon-instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
@@ -263,6 +262,55 @@
                                 </li>
                             </ul>
                         </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="clients">
+            <div class="container">
+                <h2 class="clients-title">Постійні клієнти</h2>
+                <ul class="clients-schedule">
+                    <li class="schedule-item">
+                        <a href="#" class="schedule-link">
+                            <svg class="schedule-image">
+                                <use href="./img/symbol-defs.svg#icon-yaco"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="schedule-item">
+                        <a href="#" class="schedule-link">
+                            <svg class="schedule-image">
+                                <use href="./img/symbol-defs.svg#icon-tagline-here"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="schedule-item">
+                        <a href="#" class="schedule-link">
+                            <svg class="schedule-image">
+                                <use href="./img/symbol-defs.svg#icon-company"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="schedule-item">
+                        <a href="#" class="schedule-link other-size">
+                            <svg class="schedule-image foosters-peters">
+                                <use href="./img/symbol-defs.svg#icon-foster-peter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="schedule-item">
+                        <a href="#" class="schedule-link">
+                            <svg class="schedule-image">
+                                <use href="./img/symbol-defs.svg#icon-brand"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="schedule-item">
+                        <a href="#" class="schedule-link">
+                            <svg class="schedule-image">
+                                <use href="./img/symbol-defs.svg#icon-company-tagline"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -296,7 +344,7 @@
                         </a>
                     </li>
                     <li class="checklist-item">
-                        <a href="#" class="checklist-link active">
+                        <a href="#" class="checklist-link">
                             <svg class="checklist-image">
                                 <use href="./img/symbol-defs.svg#icon-icon-twitter"></use>
                             </svg>
