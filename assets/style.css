@@ -538,3 +538,50 @@ body {
   height: 20px;
   fill: var(--main-color);
 }
+  /* modal */
+  .backdrop{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+     box-shadow: (0,0,0,0.80);
+     display: flex;
+justify-content: center;
+align-items: center;
+  }
+  .modal{
+    width: 528px;
+height: 581px;
+box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+border-radius: 4px;
+background: #FFF;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+  }
+  .modal-close{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,0.10);
+    border: none;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+  }
+  .modal-close:hover,
+  .modal-close:focus{
+  .modal-btnsvg{
+    fill: #2196F3;
+  }
+  }
+  .modal-btnsvg{
+    width: 18px;
+    height: 18px;
+  }
