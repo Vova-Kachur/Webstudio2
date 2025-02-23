@@ -13,13 +13,14 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/reset.css">
     <link rel="stylesheet" href="../assets/portfolio.css">
     <link rel="stylesheet" href="../assets/style.css" />
   </head>
   <body>
     <!-- шапка -->
-   <header class="header">
+   <header class="header" data-aos="fade-up">
       <div class="container">
         <nav class="nav">
           <a href="/" class="logo"
@@ -61,7 +62,7 @@
     </header>
     <!--основной контент-->
     <main class="main-section">
-      <div>
+      <div data-aos="flip-down">
         <section>
         <div class="container">
                   <h2 hidden>навигационные кнопки</h2>
@@ -239,7 +240,7 @@
       </div>
     </main>
     <!-- футер -->
-    <footer>
+    <footer data-aos="fade-right">
       <div class="container">
         <div>
           <a href="/" class="logo-footer"
@@ -315,5 +316,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
