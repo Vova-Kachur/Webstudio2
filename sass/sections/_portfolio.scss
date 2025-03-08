@@ -1,175 +1,109 @@
-
 .portfolio {
-    padding-top: 60px;
-    padding-bottom: 60px;
   
-    @media screen and (min-width: 1200px) {
-      padding-top: 94px;
-      padding-bottom: 94px;
-    }
-  }
-  
-  .services {
-    @media screen and (min-width: 76px) {
-      display: flex;
-      flex-wrap: wrap;
-      row-gap: 15px;
-      margin-bottom: 30px;
-      column-gap: 8px;
-    }
-  
-    @media screen and (min-width: 768px) {
-      justify-content: center;
-      
-    }
-  
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 50px;
-    }
-  
-    &__item {
-  
-      max-width: 450px;
-  
-      @media screen and (min-width: 768px) {
-        max-width: 354px;
-     
-      }
-  
-      @media screen and (min-width: 1200px) {
-        max-width: 370px;
-      }
-    }
-  
-    &__item:last-child {
-      margin-right: 0;
-    }
-  
-  
-    &__button {
-      font-family: 'Roboto';
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 1.62;
-      text-align: center;
-      letter-spacing: 0.03em;
-      color: $body-text-color;
-      background-color: $team-background-color;
-      border-radius: 4px;
-      border: none;
-      cursor: pointer;
-      padding: 6px 22px;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  
-    &__button:hover,
-    &__button:focus {
-      color: $main-background-color;
-      background-color: $hover-color;
-      border-radius: 4px;
-    }
-  }
-  
-  .collage {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.services {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
     justify-content: center;
-  
-     @media screen and (min-width: 768px) {
-      justify-content: space-between;
-     }
-  
-    &__item {
-      width: 100%;
-      
-  
-  
-      @media screen and (min-width: 768px) {
-        width: calc((100% - 30px) / 2);
-        max-width: 354px;
-        //  flex-shrink: 1;
-      }
-  
-      @media screen and (min-width: 1200px) {
-        width: calc((100% - 60px) / 3);
-        max-width: 370px;
-      }
-    }
-  
-    &__item:hover,
-    &__item:focus {
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
-  
-    &__link:hover &__text {
-      transform: translateY(0);
-    }
-  
-    &__wrap {
-      position: relative;
-      overflow: hidden;
-    }
-  
-    &__photo {
-      width: 100%;
-  
-       @media screen and (min-width: 768px) {
-     width: 100%;
-     }
-  
-    }
-  
-    &__text {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      font-size: 18px;
-      line-height: 1.56;
-      letter-spacing: 0.03em;
-      padding: 24px;
-      color: $main-background-color;
-      background-color: rgba(33, 150, 243, 0.9);
-      display: flex;
-      align-items: center;
-      transform: translateY(100%);
-      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  
-    &__frame {
-      padding: 20px 24px;
-      border-left: 1px solid #eeeeee;
-      border-right: 1px solid #eeeeee;
-      border-bottom: 1px solid #eeeeee;
-      flex-grow: 1;
-  
-     
-    }
-  
-    &__title {
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 2;
-      letter-spacing: 0.06em;
-      color: $body-text-color;
-    }
-  
-    &__description {
-      font-size: 16px;
-      line-height: 1.88;
-      letter-spacing: 0.03em;
-      margin-top: 4px;
-      color: $link-color;
-    }
+    margin-bottom: 50px;
+
+  &__item {
+    margin-right: 8px;
   }
-  
-  .collage__link {
-    display: flex;
-    flex-direction: column;
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__button {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $body-text-color;
+    background-color: $team-background-color;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    padding: 6px 22px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__button:hover,
+  &__button:focus {
+    color: $main-background-color;
+    background-color: $hover-color;
+    border-radius: 4px;
+  }
+}
+
+.collage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  &__item {
+    max-width: 370px;
+  }
+
+  &__item:hover,
+  &__item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &__link:hover &__text {
+    transform: translateY(0);
+  }
+
+  &__wrap {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    padding: 24px;
+    color: $main-background-color;
+    background-color: rgba(33, 150, 243, 0.9);
+    display: flex;
+    align-items: center;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
+  &__frame {
+    padding: 20px 24px;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $body-text-color;
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    margin-top: 4px;
+    color: $link-color;
+  }
+}
