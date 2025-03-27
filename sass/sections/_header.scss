@@ -70,6 +70,15 @@ border-bottom: 1px solid #ECECEC;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
+  @media  screen and (min-width: 768px){
+    margin-right: 88px;
+  }
+    
+  }
+  @media screen and (min-width: 1200px){
+   font-size: 26px;
+   letter-spacing: 0.78px;
+  }
 
      &__color {
   color: $hover-color;
