@@ -20,30 +20,28 @@
     <!-- шапка -->
     <header class="header">
       <div class="container">
-        <nav class="nav">
-          <a href="/" class="logo"
+        
+          <a href="./index.html" class="logo"
             ><span class="logo__color">Web</span>Studio
           </a>
-          <button class="nav__button" type="button" modal-header-open>
-            <svg width="40" height="40">
-              <use href="./img/symbol-defs.svg#icon-menu"></use>
-            </svg>
-          </button>
+          <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link nav__link-active"
-                >Студія</a
-              >
+              <a href="./index.html" class="nav__link nav__link-active">Студія</a>
             </li>
             <li class="nav__item">
-              <a href="./pages/portfolio.html" class="nav__link">Портфоліо</a>
+              <a
+                href="./pages/portfolio.html"
+                class="nav__link"
+                >Портфоліо</a
+              >
             </li>
             <li class="nav__item">
               <a href="#contacts" class="nav__link">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="contacts">
+        <ul class="contacts" data-aos="fade-down-left">
           <li class="contacts__item">
             <a href="mailto:info@devstudio.com" class="contacts__link">
               <svg class="contacts__icon" width="16" height="12">
@@ -61,73 +59,21 @@
             </a>
           </li>
         </ul>
-        <div class="mob-menu backdrop is-hidden" header-modal>
-          <div class="container">
-            <button type="button" class="btn-close" modal-header-close>
-              <svg class="modal-close-icon" width="40" height="40">
-                <use href="./img/symbol-defs.svg#icon-close"></use>
-              </svg>
-            </button>
-            <ul class="mob-menu-list">
-              <li class="mob-menu-list__item">
-                <a href="./index.html" class="mob-menu-list__link">Студія</a>
-              </li>
-              <li class="mob-menu-list__item">
-                <a href="./peges/portfolio.html" class="mob-menu-list__link"
-                  >Портфоліо</a
-                >
-              </li>
-              <li class="mob-menu-list__item">
-                <a href="" class="mob-menu-list__link">Контакти</a>
-              </li>
-            </ul>
-            <ul class="mob-menu-contacts">
-              <li class="mob-menu-contacts__item">
-                <a
-                  href=""
-                  class="mob-menu-contacts__link mob-menu-contacts__link_size_big"
-                  >+38 096 111 11 11</a
-                >
-              </li>
-              <li class="mob-menu-contacts__item">
-                <a
-                  href=""
-                  class="mob-menu-contacts__link mob-menu-contacts__link_size_small"
-                  >info@devstudio.com</a
-                >
-              </li>
-            </ul>
-            <ul class="mob-menu-social">
-              <li class="mob-menu-social__item">
-                <a href="" class="mob-menu-social__link">Instagram</a>
-              </li>
-              <li class="mob-menu-social__item">
-                <a href="" class="mob-menu-social__link">Twitter</a>
-              </li>
-              <li class="mob-menu-social__item">
-                <a href="" class="mob-menu-social__link">Facebook</a>
-              </li>
-              <li class="mob-menu-social__item">
-                <a href="" class="mob-menu-social__link">LinkedIn</a>
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
     </header>
     <!-- основной контент -->
     <main>
-      <!-- секция герой  -->
-    <section class="hero">
+      <!-- секция герой -->
+      <!-- <section class="hero" data-aos="fade-left">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero__button" data-modal-open>
             Замовити послугу
           </button>
         </div>
-      </section>
-       <!-- почему мы  -->
-      <section class="benefits">
+      </section> -->
+      <!-- почему мы -->
+      <!-- <section class="benefits" data-aos="fade-down-left">
         <div class="container">
           <h2 class="benefits__uptitle visually-hidden">Почему мы</h2>
           <ul class="benefits__list">
@@ -180,9 +126,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- чем мы занимаемся -->
-      <section class="work">
+      <!-- <section class="work" data-aos="fade-down-left">
         <div class="container">
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__list">
@@ -206,9 +152,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- наша команда -->
-      <section class="team" >
+      <!-- <section class="team" data-aos="fade-down-left">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
@@ -399,10 +345,10 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section> -->
 
       <!-- наши клиенты -->
-      <section class="clients" >
+      <!-- <section class="clients" data-aos="fade-down-left">
         <div class="container">
           <h2 class="clients__title">Постійні клієнти</h2>
           <ul class="clients__list">
@@ -451,9 +397,9 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
     <!-- подвал -->
-    <footer>
+    <!-- <footer data-aos="fade-down-left">
       <div class="container">
         <div class="footer-section">
           <a href="/" class="logo__footer"
@@ -528,10 +474,10 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- модальное окно -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <p class="modal__description">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal__form">
@@ -595,9 +541,12 @@
           </svg>
         </button>
       </div>
-    </div>
-    <script src="./js/modal-header.js"></script>
+    </div> -->
+    <!-- <script src="./js/modal-header.js"></script>
     <script src="./js/modal.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script> -->
   </body>
 </html>
