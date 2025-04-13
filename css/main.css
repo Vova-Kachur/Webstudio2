@@ -329,7 +329,6 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  overflow: hidden;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -357,10 +356,6 @@ img {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop/hero-desktop@2x.webp);
   }
-}
-.hero .container {
-  padding-top: 118px;
-  padding-bottom: 118px;
 }
 .hero__title {
   font-weight: 900;
